@@ -1543,7 +1543,7 @@ while task.wait(395) do
 				sound.SoundId=(getcustomasset or getsynasset)(SoundName..".mp3")
 				return sound
 			end
-			local Chase = GetGitSound("https://github.com/Brololto/speccy/blob/main/spawn_sound.mp3?raw=true","Specimen2chase")
+			local Chase = GetGitSound("https://github.com/Brololto/SPECYYYY2CHASSE/blob/main/Screen_Recording_20230331-232129_YouTube.mp3?raw=true","Specimen2chase")
 			Chase.Parent = workspace
 			Chase.Volume = 6
 			local cameraShaker = require(game.ReplicatedStorage.CameraShaker)
@@ -1555,6 +1555,7 @@ while task.wait(395) do
 			camShake:Start()
 			-----[[ Advanced ]]-----
 			entity.Debug.OnEntitySpawned = function(entity)
+
 				Chase:Play()
 				game.TweenService:Create(Chase,TweenInfo.new(5),{Volume = 0.7}):Play()
 				camShake:ShakeSustain(cameraShaker.Presets.Earthquake)
